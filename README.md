@@ -19,3 +19,14 @@ It is a great example for beginners learning **Object-Oriented Programming (OOP)
 - Constructor overloading (default and parameterized)
 - Getter methods to access encapsulated data
 - Clean, beginner-friendly structure
+
+
+
+Here the output of the code
+
+1
+Chandu
+34567890
+1
+Chandu
+34567890
