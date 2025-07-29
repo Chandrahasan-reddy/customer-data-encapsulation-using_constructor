@@ -1,24 +1,57 @@
-# Compiled class file
-*.class
+package encapsulationpratice;
 
-# Log file
-*.log
+class Customer
+{
+	private int cId;
+	private String cName;
+	private int cNum;
+	
+	public Customer()
+	{
+		cId = 1;
+		cName = "Chandu";
+		cNum = 34567890;
+		
+	}
+	
+	public Customer(int cId, String cName, int cNum)
+	{
+		this.cId = cId;
+		this.cName = cName;
+		this.cNum = cNum;
+		
+	}
+	
+	public int getcId()
+	{
+		return cId;
+	}
+	public String getcName()
+	{
+		return cName;
+	}
+	public int getcNum()
+	{
+		return cNum;
+	}
+	
+	
+}
 
-# BlueJ files
-*.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+public class Encapsulationconstructor {
+	
+	public static void main(String[] args)
+	{
+		Customer c1 = new Customer();
+		System.out.println(c1.getcId());
+		System.out.println(c1.getcName());
+		System.out.println(c1.getcNum());
+		
+		Customer c2 = new Customer();
+		System.out.println(c2.getcId());
+		System.out.println(c2.getcName());
+		System.out.println(c2.getcNum());
+	}
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+}
